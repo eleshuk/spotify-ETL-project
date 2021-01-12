@@ -1,5 +1,6 @@
 -- create spotify table
 CREATE TABLE "spotify" (
+	id INT,
 	name VARCHAR NOT NULL PRIMARY KEY,
 	album VARCHAR NOT NULL, 
 	artists VARCHAR NOT NULL,
@@ -13,7 +14,7 @@ CREATE TABLE "spotify" (
 );
 
 -- if necessary
--- DROP TABLE spotify;
+DROP TABLE spotify;
 
 
 -- create billboard table
@@ -26,7 +27,7 @@ CREATE TABLE "billboard" (
 	weeks_on_chart INT
 );
 
-SELECT * FROM billboard;
+SELECT * FROM spotify;
 
 -- if necessary
 DROP TABLE billboard;

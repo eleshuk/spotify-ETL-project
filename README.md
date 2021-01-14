@@ -9,3 +9,7 @@ The first dataset that I extracted was this [Kaggle](https://www.kaggle.com/rodo
 The second dataset that I extracted was using the Billboard API ([documentation found here](https://github.com/guoguo12/billboard-charts)). By installing billboard.py, I was able to extract the Billboard Hot-100 to find the current top 100 songs (updated every Tuesday). 
 
 After extracting and transforming this data, I loaded both tables into a database by using Postgres to create the schema and connected to the database using pandas. In order to load the dataframes into the database, I converted my saved dataframes to SQL so that I could query it from Jupyter Notebook. 
+
+Further investigation:
+- I'd like to join the two datasets, however because the Spotify dataset is so large and there are repeats of song names, the join is a bit more complicated. If there is time, I will work on this. 
+- In an ideal world, I'd add a column called running pace, where I would assign 
